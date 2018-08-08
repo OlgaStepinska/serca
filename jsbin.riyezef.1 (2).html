@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by OlgaStepinska (http://jsbin.com/riyezef/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="serca podpis w">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Practice JavaScript by drawing</title>
+</head>
+<body>
+  <canvas id="myCanvas" height="300" width="450" style="border: 1px solid black">
+  </canvas>
+<script id="jsbin-javascript">
+
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+
+function draw() {
+ context.beginPath();
+    context.moveTo(75,40);
+    context.bezierCurveTo(75,37,70,25,50,25);//1
+    context.bezierCurveTo(20,25,20,62.5,20,62.5);//2
+    context.bezierCurveTo(20,80,40,102,75,120);//3
+    context.bezierCurveTo(110,102,130,80,130,62.5);
+    context.bezierCurveTo(130,62.5,130,25,100,25);
+    context.bezierCurveTo(85,25,75,37,75,40);  
+    context.stroke();
+}
+draw()
+
+function draw2() {
+   context.beginPath();
+    context.moveTo(175,40);
+    context.bezierCurveTo(175,37,170,25,150,25);//1
+    context.bezierCurveTo(120,25,120,62.5,120,62.5);//2
+    context.bezierCurveTo(120,80,140,102,175,120);//3
+    context.bezierCurveTo(210,102,230,80,230,62.5);
+    context.bezierCurveTo(230,62.5,230,25,200,25);
+    context.bezierCurveTo(185,25,175,37,175,40);
+  context.strokeStyle="red";  
+  context.stroke();
+  
+}
+draw2()
+function draw3() {
+   context.beginPath();
+    context.moveTo(275,40);
+    context.bezierCurveTo(275,37,270,25,250,25);//1
+    context.bezierCurveTo(220,25,220,62.5,220,62.5);//2
+    context.bezierCurveTo(220,80,240,102,275,120);//3
+    context.bezierCurveTo(310,102,330,80,330,62.5);
+    context.bezierCurveTo(330,62.5,330,25,300,25);
+    context.bezierCurveTo(285,25,275,37,275,40);
+  context.strokeStyle="black";  
+  context.stroke();
+  
+}
+draw3()
+function draw4() {
+   context.beginPath();
+    context.moveTo(375,40);
+    context.bezierCurveTo(375,37,370,25,350,25);//1
+    context.bezierCurveTo(320,25,320,62.5,320,62.5);//2
+    context.bezierCurveTo(320,80,340,102,375,120);//3
+    context.bezierCurveTo(410,102,430,80,430,62.5);
+    context.bezierCurveTo(430,62.5,430,25,400,25);
+    context.bezierCurveTo(385,25,375,37,375,40);
+  context.strokeStyle="red";  
+  context.stroke();
+  
+}
+draw4()
+function draw5() {
+ context.beginPath();
+    context.moveTo(75,140);
+    context.bezierCurveTo(75,137,70,125,50,125);//1
+    context.bezierCurveTo(20,125,20,162.5,20,162.5);//2
+    context.bezierCurveTo(20,180,40,202,75,220);//3
+    context.bezierCurveTo(110,202,130,180,130,162.5);
+    context.bezierCurveTo(130,162.5,130,125,100,125);
+    context.bezierCurveTo(85,125,75,137,75,140);
+    context.stroke();
+}
+draw5()
+function draw6() {
+ context.beginPath();
+    context.moveTo(175,140);
+    context.bezierCurveTo(175,137,170,125,150,125);//1
+    context.bezierCurveTo(120,125,120,162.5,120,162.5);//2
+    context.bezierCurveTo(120,180,140,202,175,220);//3
+    context.bezierCurveTo(210,202,230,180,230,162.5);
+    context.bezierCurveTo(230,162.5,230,125,200,125);
+    context.bezierCurveTo(185,125,175,137,175,140);
+  context.strokeStyle="black";    
+  context.stroke();
+}
+draw6()
+function draw7() {
+ context.beginPath();
+    context.moveTo(275,140);
+    context.bezierCurveTo(275,137,270,125,250,125);//1
+    context.bezierCurveTo(220,125,220,162.5,220,162.5);//2
+    context.bezierCurveTo(220,180,240,202,275,220);//3
+    context.bezierCurveTo(310,202,330,180,330,162.5);
+    context.bezierCurveTo(330,162.5,330,125,300,125);
+    context.bezierCurveTo(285,125,275,137,275,140);
+  context.strokeStyle="red";    
+  context.stroke();
+}
+draw7()
+function draw8() {
+ context.beginPath();
+    context.moveTo(375,140);
+    context.bezierCurveTo(375,137,370,125,350,125);//1
+    context.bezierCurveTo(320,125,320,162.5,320,162.5);//2
+    context.bezierCurveTo(320,180,340,202,375,220);//3
+    context.bezierCurveTo(410,202,430,180,430,162.5);
+    context.bezierCurveTo(430,162.5,430,125,400,125);
+    context.bezierCurveTo(385,125,375,137,375,140);
+  context.strokeStyle="black";    
+  context.stroke();
+}
+draw8()
+
+context.font = " 30px Kirang Haerang";
+context.textBaseline = "middle";
+context.fillText('Dla mojej ukochanej córeczki!', 40, 270);
+
+</script>
+</body>
+</html>
